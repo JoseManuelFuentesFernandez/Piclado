@@ -1,0 +1,53 @@
+﻿<Window x:Class="Piclado.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Piclado"
+        mc:Ignorable="d"
+        Title="Piclado" Height="700" Width="1500">
+    <Grid Margin="0,0,0,0">
+        <Button Name="ONE_Key" Content="1" HorizontalAlignment="Left" Margin="42,121,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="TWO_Key" Content="2" HorizontalAlignment="Left" Margin="193,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="THREE_Key" Content="3" HorizontalAlignment="Left" Margin="343,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="FOUR_Key" Content="4" HorizontalAlignment="Left" Margin="493,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="FIVE_Key" Content="5" HorizontalAlignment="Left" Margin="643,121,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="SIX_Key" Content="6" HorizontalAlignment="Left" Margin="795,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="SEVEN_Key" Content="7" HorizontalAlignment="Left" Margin="945,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="EIGHT_Key" Content="8" HorizontalAlignment="Left" Margin="1095,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="NINE_Key" Content="9" HorizontalAlignment="Left" Margin="1246,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="ZERO_Key" Content="0" HorizontalAlignment="Left" Margin="1396,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+
+        <Button Name="Q_Key" Content="Q" HorizontalAlignment="Left" Margin="42,237,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="W_Key" Content="W" HorizontalAlignment="Left" Margin="193,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="E_Key" Content="E" HorizontalAlignment="Left" Margin="343,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="R_Key" Content="R" HorizontalAlignment="Left" Margin="493,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="T_Key" Content="T" HorizontalAlignment="Left" Margin="643,237,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="Y_Key" Content="Y" HorizontalAlignment="Left" Margin="795,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="U_Key" Content="U" HorizontalAlignment="Left" Margin="945,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="I_Key" Content="I" HorizontalAlignment="Left" Margin="1095,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="O_Key" Content="O" HorizontalAlignment="Left" Margin="1246,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="P_Key" Content="P" HorizontalAlignment="Left" Margin="1396,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+
+        <Button Name="A_Key" Content="A" HorizontalAlignment="Left" Margin="121,344,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="S_Key" Content="S" HorizontalAlignment="Left" Margin="272,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="D_Key" Content="D" HorizontalAlignment="Left" Margin="422,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="F_Key" Content="F" HorizontalAlignment="Left" Margin="572,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="G_Key" Content="G" HorizontalAlignment="Left" Margin="722,344,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="H_Key" Content="H" HorizontalAlignment="Left" Margin="874,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="J_Key" Content="J" HorizontalAlignment="Left" Margin="1024,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="K_Key" Content="K" HorizontalAlignment="Left" Margin="1174,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="L_Key" Content="L" HorizontalAlignment="Left" Margin="1325,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+
+        <Button Name="Z_Key" Content="Z" HorizontalAlignment="Left" Margin="271,458,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="X_Key" Content="X" HorizontalAlignment="Left" Margin="422,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="C_Key" Content="C" HorizontalAlignment="Left" Margin="572,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36" RenderTransformOrigin="0.592,0.484"/>
+        <Button Name="V_Key" Content="V" HorizontalAlignment="Left" Margin="722,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="B_Key" Content="B" HorizontalAlignment="Left" Margin="872,458,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="N_Key" Content="N" HorizontalAlignment="Left" Margin="1024,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="M_Key" Content="M" HorizontalAlignment="Left" Margin="1174,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+
+        <Button Name="SHIFT_Key" Content="▲" HorizontalAlignment="Left" Margin="42,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Button Name="CTRL_Key" Content="▼" HorizontalAlignment="Left" Margin="42,562,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+    </Grid>
+</Window>

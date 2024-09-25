@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piclado", "Piclado\Piclado.csproj", "{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31A64874-EB29-49B4-AE29-78C94D7C4A81}
+	EndGlobalSection
+EndGlobal
