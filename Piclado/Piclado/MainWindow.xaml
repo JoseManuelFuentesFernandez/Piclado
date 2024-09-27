@@ -6,48 +6,66 @@
         xmlns:local="clr-namespace:Piclado"
         mc:Ignorable="d"
         Title="Piclado" Height="700" Width="1500">
-    <Grid Margin="0,0,0,0">
-        <Button Name="ONE_Key" Content="1" HorizontalAlignment="Left" Margin="42,121,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="TWO_Key" Content="2" HorizontalAlignment="Left" Margin="193,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="THREE_Key" Content="3" HorizontalAlignment="Left" Margin="343,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="FOUR_Key" Content="4" HorizontalAlignment="Left" Margin="493,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="FIVE_Key" Content="5" HorizontalAlignment="Left" Margin="643,121,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="SIX_Key" Content="6" HorizontalAlignment="Left" Margin="795,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="SEVEN_Key" Content="7" HorizontalAlignment="Left" Margin="945,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="EIGHT_Key" Content="8" HorizontalAlignment="Left" Margin="1095,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="NINE_Key" Content="9" HorizontalAlignment="Left" Margin="1246,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="ZERO_Key" Content="0" HorizontalAlignment="Left" Margin="1396,121,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+    <Grid Margin="0,0,0,0" Background="#FF83C9FF">
+        <!--FIRST ROW-->
+        <Button x:Name="W_key" Content="W" HorizontalAlignment="Left" Margin="48,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="E_key" Content="E" HorizontalAlignment="Left" Margin="148,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="R_key" Content="R" HorizontalAlignment="Left" Margin="248,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="T_key" Content="T" HorizontalAlignment="Left" Margin="348,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="Y_key" Content="Y" HorizontalAlignment="Left" Margin="448,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="U_key" Content="U" HorizontalAlignment="Left" Margin="548,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="I_key" Content="I" HorizontalAlignment="Left" Margin="648,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="THREE_key" Content="3" HorizontalAlignment="Left" Margin="123,50,0,0" VerticalAlignment="Top" Height="222" Background="Black" Width="50" FontFamily="Book Antiqua" FontSize="36" Foreground="White"/>
+        <Button x:Name="FOUR_key" Content="4" HorizontalAlignment="Left" Margin="221,50,0,0" VerticalAlignment="Top" Height="222" Background="Black" Width="50" FontFamily="Book Antiqua" FontSize="36" Foreground="White"/>
+        <Button x:Name="SIX_key" Content="6" HorizontalAlignment="Left" Margin="421,50,0,0" VerticalAlignment="Top" Height="222" Background="Black" Width="50" FontFamily="Book Antiqua" FontSize="36" Foreground="White"/>
+        <Button x:Name="SEVEN_key" Content="7" HorizontalAlignment="Left" Margin="521,50,0,0" VerticalAlignment="Top" Height="222" Background="Black" Width="50" FontFamily="Book Antiqua" FontSize="36" Foreground="White"/>
+        <Button x:Name="EIGHT_key" Content="8" HorizontalAlignment="Left" Margin="623,50,0,0" VerticalAlignment="Top" Height="222" Background="Black" Width="50" FontFamily="Book Antiqua" FontSize="36" Foreground="White"/>
 
-        <Button Name="Q_Key" Content="Q" HorizontalAlignment="Left" Margin="42,237,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="W_Key" Content="W" HorizontalAlignment="Left" Margin="193,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="E_Key" Content="E" HorizontalAlignment="Left" Margin="343,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="R_Key" Content="R" HorizontalAlignment="Left" Margin="493,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="T_Key" Content="T" HorizontalAlignment="Left" Margin="643,237,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="Y_Key" Content="Y" HorizontalAlignment="Left" Margin="795,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="U_Key" Content="U" HorizontalAlignment="Left" Margin="945,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="I_Key" Content="I" HorizontalAlignment="Left" Margin="1095,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="O_Key" Content="O" HorizontalAlignment="Left" Margin="1246,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="P_Key" Content="P" HorizontalAlignment="Left" Margin="1396,237,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Label x:Name="W_label" Content="W" HorizontalAlignment="Left" Margin="74,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="E_label" Content="E" HorizontalAlignment="Left" Margin="174,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="R_label" Content="R" HorizontalAlignment="Left" Margin="274,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="T_label" Content="T" HorizontalAlignment="Left" Margin="374,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="Y_label" Content="Y" HorizontalAlignment="Left" Margin="474,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="U_label" Content="U" HorizontalAlignment="Left" Margin="574,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="I_label" Content="I" HorizontalAlignment="Left" Margin="674,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="THREE_label" Content="3" HorizontalAlignment="Left" Margin="131,64,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14" Foreground="White"/>
+        <Label x:Name="FOUR_label" Content="4" HorizontalAlignment="Left" Margin="229,64,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14" Foreground="White"/>
+        <Label x:Name="SIX_label" Content="6" HorizontalAlignment="Left" Margin="429,64,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14" Foreground="White"/>
+        <Label x:Name="SEVEN_label" Content="7" HorizontalAlignment="Left" Margin="529,64,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14" Foreground="White"/>
+        <Label x:Name="EIGHT_label" Content="8" HorizontalAlignment="Left" Margin="631,64,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14" Foreground="White"/>
 
-        <Button Name="A_Key" Content="A" HorizontalAlignment="Left" Margin="121,344,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="S_Key" Content="S" HorizontalAlignment="Left" Margin="272,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="D_Key" Content="D" HorizontalAlignment="Left" Margin="422,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="F_Key" Content="F" HorizontalAlignment="Left" Margin="572,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="G_Key" Content="G" HorizontalAlignment="Left" Margin="722,344,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="H_Key" Content="H" HorizontalAlignment="Left" Margin="874,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="J_Key" Content="J" HorizontalAlignment="Left" Margin="1024,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="K_Key" Content="K" HorizontalAlignment="Left" Margin="1174,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="L_Key" Content="L" HorizontalAlignment="Left" Margin="1325,344,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <!--SECOND ROW-->
+        <Button x:Name="Z_key" Content="Z" HorizontalAlignment="Left" Margin="748,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="X_key" Content="X" HorizontalAlignment="Left" Margin="848,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="C_key" Content="C" HorizontalAlignment="Left" Margin="948,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="V_key" Content="V" HorizontalAlignment="Left" Margin="1048,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="B_key" Content="B" HorizontalAlignment="Left" Margin="1148,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="N_key" Content="N" HorizontalAlignment="Left" Margin="1248,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="M_key" Content="M" HorizontalAlignment="Left" Margin="1348,50,0,0" VerticalAlignment="Top" Height="443" Background="White" Width="100" FontFamily="Book Antiqua" FontSize="36"/>
+        <Button x:Name="S_key" Content="S" HorizontalAlignment="Left" Margin="824,50,0,0" VerticalAlignment="Top" Height="222" Background="Black" Width="50" FontFamily="Book Antiqua" FontSize="36" Foreground="White"/>
+        <Button x:Name="D_key" Content="D" HorizontalAlignment="Left" Margin="922,50,0,0" VerticalAlignment="Top" Height="222" Background="Black" Width="50" FontFamily="Book Antiqua" FontSize="36" Foreground="White"/>
+        <Button x:Name="G_key" Content="G" HorizontalAlignment="Left" Margin="1122,50,0,0" VerticalAlignment="Top" Height="222" Background="Black" Width="50" FontFamily="Book Antiqua" FontSize="36" Foreground="White"/>
+        <Button x:Name="H_key" Content="H" HorizontalAlignment="Left" Margin="1222,50,0,0" VerticalAlignment="Top" Height="222" Background="Black" Width="50" FontFamily="Book Antiqua" FontSize="36" Foreground="White"/>
+        <Button x:Name="J_key" Content="J" HorizontalAlignment="Left" Margin="1324,50,0,0" VerticalAlignment="Top" Height="222" Background="Black" Width="50" FontFamily="Book Antiqua" FontSize="36" Foreground="White"/>
 
-        <Button Name="Z_Key" Content="Z" HorizontalAlignment="Left" Margin="271,458,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="X_Key" Content="X" HorizontalAlignment="Left" Margin="422,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="C_Key" Content="C" HorizontalAlignment="Left" Margin="572,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36" RenderTransformOrigin="0.592,0.484"/>
-        <Button Name="V_Key" Content="V" HorizontalAlignment="Left" Margin="722,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="B_Key" Content="B" HorizontalAlignment="Left" Margin="872,458,0,0" VerticalAlignment="Top" Height="70" Width="61" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="N_Key" Content="N" HorizontalAlignment="Left" Margin="1024,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="M_Key" Content="M" HorizontalAlignment="Left" Margin="1174,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <Label x:Name="Z_label" Content="Z" HorizontalAlignment="Left" Margin="783,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="X_label" Content="X" HorizontalAlignment="Left" Margin="883,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="C_label" Content="C" HorizontalAlignment="Left" Margin="983,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="V_label" Content="V" HorizontalAlignment="Left" Margin="1083,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="B_label" Content="B" HorizontalAlignment="Left" Margin="1183,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="N_label" Content="N" HorizontalAlignment="Left" Margin="1283,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="M_label" Content="M" HorizontalAlignment="Left" Margin="1383,450,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14"/>
+        <Label x:Name="S_label" Content="S" HorizontalAlignment="Left" Margin="831,64,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14" Foreground="White"/>
+        <Label x:Name="D_label" Content="D" HorizontalAlignment="Left" Margin="929,64,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14" Foreground="White"/>
+        <Label x:Name="G_label" Content="G" HorizontalAlignment="Left" Margin="1129,64,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14" Foreground="White"/>
+        <Label x:Name="H_label" Content="H" HorizontalAlignment="Left" Margin="1229,64,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14" Foreground="White"/>
+        <Label x:Name="J_label" Content="J" HorizontalAlignment="Left" Margin="1333,64,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="14" Foreground="White"/>
 
-        <Button Name="SHIFT_Key" Content="▲" HorizontalAlignment="Left" Margin="42,458,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
-        <Button Name="CTRL_Key" Content="▼" HorizontalAlignment="Left" Margin="42,562,0,0" VerticalAlignment="Top" Height="70" Width="60" FontFamily="Cambria" FontSize="36"/>
+        <!--OCTAVES-->
+        <Label x:Name="first_octave_label_1" Content="1" HorizontalAlignment="Left" Margin="48,0,0,0" VerticalAlignment="Top" FontSize="36" FontStyle="Italic" FontFamily="Bell MT"/>
+        <Label x:Name="first_octave_label_2" Content="1" HorizontalAlignment="Left" Margin="715,0,0,0" VerticalAlignment="Top" FontSize="36" FontStyle="Italic" FontFamily="Bell MT"/>
+        <Label x:Name="second_octave_label_1" Content="2" HorizontalAlignment="Left" Margin="753,0,0,0" VerticalAlignment="Top" FontSize="36" FontStyle="Italic" FontFamily="Bell MT"/>
+        <Label x:Name="second_octave_label_2" Content="2" HorizontalAlignment="Left" Margin="1420,0,0,0" VerticalAlignment="Top" FontSize="36" FontStyle="Italic" FontFamily="Bell MT"/>
+
     </Grid>
 </Window>

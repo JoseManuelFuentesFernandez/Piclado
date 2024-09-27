@@ -1,7 +1,9 @@
-﻿using System.IO;
+﻿using System.Drawing;
+using System.IO;
 using System.Numerics;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 using WMPLib;
 
 namespace Piclado
@@ -13,10 +15,8 @@ namespace Piclado
     {
         public const String NOTES_PATH = @"res\piano-mp3\";
         public const int PLAYERS_COUNT = 20;
-        public static List<String> notes = new List<String>();
-        public static Int16 octaves = 0;
-        public static List<WindowsMediaPlayer> wplayers = new List<WindowsMediaPlayer>();
-        
+        public static Int16 octaves = 1;
+        public static List<WindowsMediaPlayer> wplayers = new List<WindowsMediaPlayer>(PLAYERS_COUNT);
 
         public MainWindow()
         {
@@ -33,13 +33,10 @@ namespace Piclado
 
         private void InizializeNotes()
         {
-            string[] files = Directory.GetFiles(NOTES_PATH);
-
-            foreach (string file in files)
-            {
-                notes.Add(Path.GetFileName(file));
-            }
+            RefreshLabels();
         }
+
+        
 
         private void InizializePlayers()
         {
@@ -53,13 +50,11 @@ namespace Piclado
 
         
 
-        private void playNote(int index)
+        private void PlayNote(String note,Int16 row)
         {
-            if (index + octaves*36 >= notes.Count) return;
-
             WindowsMediaPlayer wplayer = GetFreePlayer();
 
-            wplayer.URL = Path.Combine(NOTES_PATH, notes[index + octaves*36]);
+            wplayer.URL = Path.Combine(NOTES_PATH, note+(octaves+row).ToString()+".mp3");
             wplayer.controls.play();
         }
 
@@ -76,207 +71,259 @@ namespace Piclado
             return new WindowsMediaPlayer();
         }
 
+        private void RefreshLabels()
+        {
+            first_octave_label_1.Content = octaves.ToString();
+            first_octave_label_2.Content = octaves.ToString();
+            second_octave_label_1.Content = (1 + octaves).ToString();
+            second_octave_label_1.Content = (1 + octaves).ToString();
+
+            W_label.Content = "C" + octaves.ToString();
+            E_label.Content = "D" + octaves.ToString();
+            R_label.Content = "E" + octaves.ToString();
+            T_label.Content = "F" + octaves.ToString();
+            Y_label.Content = "G" + octaves.ToString();
+            U_label.Content = "A" + octaves.ToString();
+            I_label.Content = "B" + octaves.ToString();
+
+            THREE_label.Content = "Db" + octaves.ToString();
+            FOUR_label.Content = "Eb" + octaves.ToString();
+            SIX_label.Content = "Gb" + octaves.ToString();
+            SEVEN_label.Content = "Ab" + octaves.ToString();
+            EIGHT_label.Content = "Bb" + octaves.ToString();
+
+            Z_label.Content = "C" + (octaves + 1).ToString();
+            X_label.Content = "D" + (octaves + 1).ToString();
+            C_label.Content = "E" + (octaves + 1).ToString();
+            V_label.Content = "F" + (octaves + 1).ToString();
+            B_label.Content = "G" + (octaves + 1).ToString();
+            N_label.Content = "A" + (octaves + 1).ToString();
+            M_label.Content = "B" + (octaves + 1).ToString();
+
+            S_label.Content = "Db" + (octaves + 1).ToString();
+            D_label.Content = "Eb" + (octaves + 1).ToString();
+            G_label.Content = "Gb" + (octaves + 1).ToString();
+            H_label.Content = "Ab" + (octaves + 1).ToString();
+            J_label.Content = "Bb" + (octaves + 1).ToString();
+        }
+
         private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             switch (e.Key)
             {
-                case Key.D1:
-                    playNote(0);
-                    break;
-                case Key.D2:
-                    playNote(1);
-                    break;
+
                 case Key.D3:
-                    playNote(2);
-                    break;
-                case Key.D4:
-                    playNote(3);
-                    break;
-                case Key.D5:
-                    playNote(4);
-                    break;
-                case Key.D6:
-                    playNote(5);
-                    break;
-                case Key.D7:
-                    playNote(6);
-                    break;
-                case Key.D8:
-                    playNote(7);
-                    break;
-                case Key.D9:
-                    playNote(8);
-                    break;
-                case Key.D0:
-                    playNote(9);
+                    THREE_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("Db", 0);
                     break;
 
-                case Key.Q:
-                    playNote(10);
+                case Key.D4:
+                    FOUR_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("Eb", 0);
                     break;
+
+                case Key.D6:
+                    SIX_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("Gb", 0);
+                    break;
+
+                case Key.D7:
+                    SEVEN_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("Ab", 0);
+                    break;
+
+                case Key.D8:
+                    EIGHT_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("Bb", 0);
+                    break;
+
                 case Key.W:
-                    playNote(11);
+                    W_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("C", 0);
                     break;
+
                 case Key.E:
-                    playNote(12);
+                    E_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("D", 0);
                     break;
+
                 case Key.R:
-                    playNote(13);
+                    R_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("E", 0);
                     break;
+
                 case Key.T:
-                    playNote(14);
+                    T_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("F", 0);
                     break;
+
                 case Key.Y:
-                    playNote(15);
+                    Y_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("G", 0);
                     break;
+
                 case Key.U:
-                    playNote(16);
+                    U_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("A", 0);
                     break;
+
                 case Key.I:
-                    playNote(17);
+                    I_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("B", 0);
                     break;
-                case Key.O:
-                    playNote(18);
-                    break;
-                case Key.P:
-                    playNote(19);
-                    break;
-                case Key.A:
-                    playNote(20);
-                    break;
+
                 case Key.S:
-                    playNote(21);
+                    S_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("Db", 1);
                     break;
+
                 case Key.D:
-                    playNote(22);
+                    D_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("Eb", 1);
                     break;
-                case Key.F:
-                    playNote(23);
-                    break;
+
                 case Key.G:
-                    playNote(24);
+                    G_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("Gb", 1);
                     break;
+
                 case Key.H:
-                    playNote(25);
+                    H_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("Ab", 1);
                     break;
+
                 case Key.J:
-                    playNote(26);
+                    J_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("Bb", 1);
                     break;
-                case Key.K:
-                    playNote(27);
-                    break;
-                case Key.L:
-                    playNote(28);
-                    break;
+
                 case Key.Z:
-                    playNote(29);
+                    Z_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("C", 1);
                     break;
+
                 case Key.X:
-                    playNote(30);
+                    X_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("D", 1);
                     break;
+
                 case Key.C:
-                    playNote(31);
+                    C_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("E", 1);
                     break;
+
                 case Key.V:
-                    playNote(32);
+                    V_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("F", 1);
                     break;
+
                 case Key.B:
-                    playNote(33);
+                    B_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("G", 1);
                     break;
+
                 case Key.N:
-                    playNote(34);
+                    N_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("A", 1);
                     break;
+
                 case Key.M:
-                    playNote(35);
+                    M_key.Background = Brushes.CornflowerBlue;
+                    PlayNote("B", 1);
                     break;
             }
         }
-
 
         private void Window_PreviewKeyUp(object sender, KeyEventArgs e)
         {
             switch (e.Key)
             {
-                case Key.D1:
-                    break;
-                case Key.D2:
-                    break;
                 case Key.D3:
+                    THREE_key.Background = Brushes.Black;
                     break;
                 case Key.D4:
+                    FOUR_key.Background = Brushes.Black;
                     break;
-                case Key.D5:
-                    break;
+
                 case Key.D6:
+                    SIX_key.Background = Brushes.Black;
                     break;
                 case Key.D7:
+                    SEVEN_key.Background = Brushes.Black;
                     break;
                 case Key.D8:
-                    break;
-                case Key.D9:
-                    break;
-                case Key.D0:
+                    EIGHT_key.Background = Brushes.Black;
                     break;
 
-                // Manejo de teclas de letras
-                case Key.Q:
-                    break;
                 case Key.W:
+                    W_key.Background = Brushes.White;
                     break;
                 case Key.E:
+                    E_key.Background = Brushes.White;
                     break;
                 case Key.R:
+                    R_key.Background = Brushes.White;
                     break;
                 case Key.T:
+                    T_key.Background = Brushes.White;
                     break;
                 case Key.Y:
+                    Y_key.Background = Brushes.White;
                     break;
                 case Key.U:
+                    U_key.Background = Brushes.White;
                     break;
                 case Key.I:
-                    break;
-                case Key.O:
-                    break;
-                case Key.P:
-                    break;
-                case Key.A:
-                    break;
-                case Key.S:
-                    break;
-                case Key.D:
-                    break;
-                case Key.F:
-                    break;
-                case Key.G:
-                    break;
-                case Key.H:
-                    break;
-                case Key.J:
-                    break;
-                case Key.K:
-                    break;
-                case Key.L:
-                    break;
-                case Key.Z:
-                    break;
-                case Key.X:
-                    break;
-                case Key.C:
-                    break;
-                case Key.V:
-                    break;
-                case Key.B:
-                    break;
-                case Key.N:
-                    break;
-                case Key.M:
+                    I_key.Background = Brushes.White;
                     break;
 
+                case Key.S:
+                    S_key.Background = Brushes.Black;
+                    break;
+                case Key.D:
+                    D_key.Background = Brushes.Black;
+                    break;
+
+                case Key.G:
+                    G_key.Background = Brushes.Black;
+                    break;
+                case Key.H:
+                    H_key.Background = Brushes.Black;
+                    break;
+                case Key.J:
+                    J_key.Background = Brushes.Black;
+                    break;
+
+                case Key.Z:
+                    Z_key.Background = Brushes.White;
+                    break;
+                case Key.X:
+                    X_key.Background = Brushes.White;
+                    break;
+                case Key.C:
+                    C_key.Background = Brushes.White;
+                    break;
+                case Key.V:
+                    V_key.Background = Brushes.White;
+                    break;
+                case Key.B:
+                    B_key.Background = Brushes.White;
+                    break;
+                case Key.N:
+                    N_key.Background = Brushes.White;
+                    break;
+                case Key.M:
+                    M_key.Background = Brushes.White;
+                    break;
+            
+
                 case Key.LeftShift:
-                    if (octaves < 2) octaves++;
+                    if (octaves <= 5) octaves++;
+                    RefreshLabels();
                     break;
                 case Key.LeftCtrl:
-                    if(octaves > 0) octaves--;
+                    if(octaves > 1) octaves--;
+                    RefreshLabels();
                     break;
             }
         }

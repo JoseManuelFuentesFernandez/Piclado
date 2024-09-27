@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\jmff2\\Documents\\GitHub\\Piclado\\Piclado\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}|Piclado\\Piclado.csproj|c:\\users\\jmff2\\documents\\github\\piclado\\piclado\\piclado\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}|Piclado\\Piclado.csproj|solutionrelative:piclado\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}|Piclado\\Piclado.csproj|c:\\users\\jmff2\\documents\\github\\piclado\\piclado\\piclado\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}|Piclado\\Piclado.csproj|solutionrelative:piclado\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}|Piclado\\Piclado.csproj|c:\\users\\jmff2\\documents\\github\\piclado\\piclado\\piclado\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6E9300A-0D0A-46F1-B03A-B3A7E9193906}|Piclado\\Piclado.csproj|solutionrelative:piclado\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,29 +18,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\jmff2\\Documents\\GitHub\\Piclado\\Piclado\\Piclado\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Piclado\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\jmff2\\Documents\\GitHub\\Piclado\\Piclado\\Piclado\\MainWindow.xaml",
-              "RelativeToolTip": "Piclado\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\jmff2\\Documents\\GitHub\\Piclado\\Piclado\\Piclado\\MainWindow.xaml*",
+              "RelativeToolTip": "Piclado\\MainWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-24T12:34:44.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jmff2\\Documents\\GitHub\\Piclado\\Piclado\\Piclado\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Piclado\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\jmff2\\Documents\\GitHub\\Piclado\\Piclado\\Piclado\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "Piclado\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwEsAAAAqAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\jmff2\\Documents\\GitHub\\Piclado\\Piclado\\Piclado\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Piclado\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAIgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T12:35:02.631Z",
               "EditorCaption": ""
