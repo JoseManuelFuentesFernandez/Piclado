@@ -15,7 +15,8 @@ namespace Piclado
     {
         public const String NOTES_PATH = @"res\piano-mp3\";
         public const int PLAYERS_COUNT = 20;
-        public static Int16 octaves = 1;
+        public static Int16 octaves1 = 1;
+        public static Int16 octaves2 = 2;
         public static List<WindowsMediaPlayer> wplayers = new List<WindowsMediaPlayer>(PLAYERS_COUNT);
 
         public MainWindow()
@@ -54,7 +55,13 @@ namespace Piclado
         {
             WindowsMediaPlayer wplayer = GetFreePlayer();
 
-            wplayer.URL = Path.Combine(NOTES_PATH, note+(octaves+row).ToString()+".mp3");
+            int octave = octaves1;
+            if(row == 1)
+            {
+                octave = octaves2;
+            }
+
+            wplayer.URL = Path.Combine(NOTES_PATH, note+(octave).ToString()+".mp3");
             wplayer.controls.play();
         }
 
@@ -73,38 +80,38 @@ namespace Piclado
 
         private void RefreshLabels()
         {
-            first_octave_label_1.Content = octaves.ToString();
-            first_octave_label_2.Content = octaves.ToString();
-            second_octave_label_1.Content = (1 + octaves).ToString();
-            second_octave_label_1.Content = (1 + octaves).ToString();
+            first_octave_label_1.Content = octaves1.ToString();
+            first_octave_label_2.Content = octaves1.ToString();
+            second_octave_label_1.Content = octaves2.ToString();
+            second_octave_label_1.Content = octaves2.ToString();
 
-            W_label.Content = "C" + octaves.ToString();
-            E_label.Content = "D" + octaves.ToString();
-            R_label.Content = "E" + octaves.ToString();
-            T_label.Content = "F" + octaves.ToString();
-            Y_label.Content = "G" + octaves.ToString();
-            U_label.Content = "A" + octaves.ToString();
-            I_label.Content = "B" + octaves.ToString();
+            W_label.Content = "C" + octaves1.ToString();
+            E_label.Content = "D" + octaves1.ToString();
+            R_label.Content = "E" + octaves1.ToString();
+            T_label.Content = "F" + octaves1.ToString();
+            Y_label.Content = "G" + octaves1.ToString();
+            U_label.Content = "A" + octaves1.ToString();
+            I_label.Content = "B" + octaves1.ToString();
 
-            THREE_label.Content = "Db" + octaves.ToString();
-            FOUR_label.Content = "Eb" + octaves.ToString();
-            SIX_label.Content = "Gb" + octaves.ToString();
-            SEVEN_label.Content = "Ab" + octaves.ToString();
-            EIGHT_label.Content = "Bb" + octaves.ToString();
+            THREE_label.Content = "Db" + octaves1.ToString();
+            FOUR_label.Content = "Eb" + octaves1.ToString();
+            SIX_label.Content = "Gb" + octaves1.ToString();
+            SEVEN_label.Content = "Ab" + octaves1.ToString();
+            EIGHT_label.Content = "Bb" + octaves1.ToString();
 
-            Z_label.Content = "C" + (octaves + 1).ToString();
-            X_label.Content = "D" + (octaves + 1).ToString();
-            C_label.Content = "E" + (octaves + 1).ToString();
-            V_label.Content = "F" + (octaves + 1).ToString();
-            B_label.Content = "G" + (octaves + 1).ToString();
-            N_label.Content = "A" + (octaves + 1).ToString();
-            M_label.Content = "B" + (octaves + 1).ToString();
+            Z_label.Content = "C" + octaves2.ToString();
+            X_label.Content = "D" + octaves2.ToString();
+            C_label.Content = "E" + octaves2.ToString();
+            V_label.Content = "F" + octaves2.ToString();
+            B_label.Content = "G" + octaves2.ToString();
+            N_label.Content = "A" + octaves2.ToString();
+            M_label.Content = "B" + octaves2.ToString();
 
-            S_label.Content = "Db" + (octaves + 1).ToString();
-            D_label.Content = "Eb" + (octaves + 1).ToString();
-            G_label.Content = "Gb" + (octaves + 1).ToString();
-            H_label.Content = "Ab" + (octaves + 1).ToString();
-            J_label.Content = "Bb" + (octaves + 1).ToString();
+            S_label.Content = "Db" + octaves2.ToString();
+            D_label.Content = "Eb" + octaves2.ToString();
+            G_label.Content = "Gb" + octaves2.ToString();
+            H_label.Content = "Ab" + octaves2.ToString();
+            J_label.Content = "Bb" + octaves2.ToString();
         }
 
         private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
@@ -315,14 +322,50 @@ namespace Piclado
                 case Key.M:
                     M_key.Background = Brushes.White;
                     break;
-            
+
+                case Key.Q:
+                    if (octaves1 > 1)
+                    {
+                        octaves1--;
+                    }
+                    RefreshLabels();
+                    break;
+                case Key.P:
+                    if (octaves1 < 7)
+                    {
+                        octaves1++;
+                    }
+                    RefreshLabels();
+                    break;
+                case Key.OemComma:
+                    if (octaves2 > 1)
+                    {
+                        octaves2--;
+                    }
+                    RefreshLabels();
+                    break;
+                case Key.OemPeriod:
+                    if (octaves2 < 7)
+                    {
+                        octaves2++;
+                    }
+                    RefreshLabels();
+                    break;
 
                 case Key.LeftShift:
-                    if (octaves <= 5) octaves++;
+                    if (octaves2 <= 6 && octaves1 <= 6)
+                    {
+                        octaves1++;
+                        octaves2++;
+                    }
                     RefreshLabels();
                     break;
                 case Key.LeftCtrl:
-                    if(octaves > 1) octaves--;
+                    if (octaves2 > 1 && octaves1 > 1)
+                    {
+                        octaves1--;
+                        octaves2--;
+                    }
                     RefreshLabels();
                     break;
             }
